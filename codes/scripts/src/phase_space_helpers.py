@@ -23,10 +23,54 @@ from scipy.optimize import root_scalar
 from fig_locs import figs_path
 from data_locs import reanal_filename, sims_loc
 
+import matplotlib as mpl 
+
 from src.phase_space_helpers import *
 
 import matplotlib as mpl 
 from lat_longs import loc_dict
+
+# plotting lists
+color_list = ['#000000', '#E69F00', '#56B4E9', '#009E73', '#F0E442', '#0072B2', '#D55E00', '#CC79A7'] * 4
+marker_list = ['o', 's', 'P', '*', '<', 'v', '>', 'p'] * 4
+linestyle_list = ['solid'] * 8 + ['dashdot'] * 8 + ['dashed'] * 8 + ['dotted'] * 8
+
+# dictionaries of params
+cdds_params={'axes.linewidth': 3,
+ 'axes.axisbelow': False,
+ 'axes.edgecolor': 'black',
+ 'axes.facecolor': 'None',
+ 'axes.grid': False,
+ 'axes.labelcolor': 'black',
+ 'axes.spines.right': False,
+ 'axes.spines.top': False,
+ 'axes.titlesize': 20,
+ 'axes.labelsize': 20,
+ 'axes.titlelocation': 'left',
+ 'figure.facecolor': 'white',
+ 'figure.figsize': (18, 10),
+ 'lines.solid_capstyle': 'round',
+ 'lines.linewidth': 2.5,
+ 'patch.edgecolor': 'w',
+ 'patch.force_edgecolor': True,
+ 'text.color': 'black',
+ 'legend.frameon': False,
+ 'xtick.bottom': True,
+ 'xtick.major.width': 3,
+ 'xtick.major.size': 6,
+ 'xtick.color': 'black',
+ 'xtick.direction': 'out',
+ 'xtick.top': False,
+ 'ytick.color': 'black',
+ 'ytick.direction': 'out',
+ 'ytick.left': True,
+ 'ytick.right': False,
+ 'ytick.color' : 'black',
+ 'ytick.major.width': 3, 
+ 'ytick.major.size': 6,
+ 'axes.prop_cycle': plt.cycler(color=color_list, linestyle=linestyle_list),
+ 'font.size': 16,
+ 'font.family': 'serif'}
 
 
 def get_Td_difference_Td(anom_size, t99, m, place):
