@@ -13,7 +13,7 @@ This set of codes reproduces the figures and analysis in our paper. Each code sh
 | Figure 2 | `02_reanalysis.sh` | Reanalysis, see `DATA_AVAIL.md` | - |
 | Figure 3 | `03_param_test.sh` | None | - |
 | Figure 4 | `04_time_series_short_sgp.sh` | Reanalysis, see `DATA_AVAIL.md` | - |
-| Figure 5 | `05_phase_space_Td.sh` | Reanalysis and model simulations, see `DATA_AVAIL.md` | Long runtime |
+| Figure 5 | `05_phase_space_Td.sh` | Reanalysis and model simulations, see `DATA_AVAIL.md` | Requires running `00_model_sims.sh` |
 | Figure 6 | `06_ansatz_verif.sh` | None | - |
 | Figure S1 | `s01_obs_noszn.sh` | Observations, see `DATA_AVAIL.md` | - |
 | Figure S2 | `s02_reanalysis_Tmax.sh` | Reanalysis, see `DATA_AVAIL.md` | - |
@@ -24,7 +24,7 @@ This set of codes reproduces the figures and analysis in our paper. Each code sh
 | Figure S7 | `s07_time_series_long_sgp.sh` | Reanalysis, see `DATA_AVAIL.md` | - |
 | Figure S8 | `s08_time_series_long_atl.sh` | Reanalysis, see `DATA_AVAIL.md` | - |
 | Figure S9 | `s09_time_series_long_dc.sh` | Reanalysis, see `DATA_AVAIL.md` | - |
-| Figure S10 | `s10_phase_space_F.sh` | Reanalysis, see `DATA_AVAIL.md` | Long runtime | 
+| Figure S10 | `s10_phase_space_F.sh` | Reanalysis and model simulations, see `DATA_AVAIL.md` | Requires running `00_model_sims.sh` | 
 
 All codes are in the `codes` folder. You might need to run `chmod +x filename.sh` in order to run each bash script.
 
