@@ -19,7 +19,8 @@ Reanalysis data was used downloaded from `https://cds.climate.copernicus.eu/data
 - `str` (longwave heat flux)
 - `sshf` (sensible heat flux)
 - `tp` (precipitation)
-and post-processed hourly values into daily means. Please reach out to the corresponding author on the paper if you need assistance in downloading the data or post-processing it into daily mean values.
+
+We post-processed hourly values into daily means. Please reach out to the corresponding author on the paper if you need assistance in downloading the data or post-processing it into daily mean values.
 
 # Model Simulations
 Comparing our soil moisture dynamics with ERA5 requires integrating our Hasselmann model with stochastic precipitation. These simulations will be generated on-the-fly when the code doesn't detect that another file exists. *NOTE*: They might take a while. :)
