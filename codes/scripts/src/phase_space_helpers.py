@@ -22,11 +22,6 @@ from scipy.optimize import root_scalar
 
 from fig_locs import figs_path
 from data_locs import reanal_filename, sims_loc
-
-import matplotlib as mpl 
-
-from src.phase_space_helpers import *
-
 import matplotlib as mpl 
 from lat_longs import loc_dict
 
