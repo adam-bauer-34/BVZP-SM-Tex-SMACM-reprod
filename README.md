@@ -2,7 +2,7 @@
 
 By: Adam Michael Bauer
 
-Citation for journal article: Bauer, A. M., L. R. Vargas Zeppetello, C. Proistosescu. *An Analytical Model for the Influence of Soil Moisture on Temperature Extremes in the Midlatitudes*, In review at *Journal of Climate*, 2025.
+Citation for journal article: Bauer, A. M., L. R. Vargas Zeppetello, C. Proistosescu. *An Analytical Model for the Influence of Soil Moisture on Temperature Extremes in the Midlatitudes*, *Journal of Climate*, 2025.
 
 # General Package Overview
 This set of codes reproduces the figures and analysis in our paper. Each code shouldn't take too long to run, unless there are simulations involved. Here's a summary table of the scripts to run and the figures they reproduce.
