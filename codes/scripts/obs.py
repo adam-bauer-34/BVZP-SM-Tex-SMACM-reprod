@@ -1,5 +1,12 @@
+import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import numpy as np
 from netCDF4 import Dataset
+
+from fig_locs import figs_path
+from data_locs import obs_T_filename, obs_M_filename
 
 def hor_interp(array,X_initial,Y_initial,X_final,Y_final):
 	from scipy.interpolate import griddata
@@ -69,22 +76,21 @@ def plotting(X,Y,Z):
     cb1 = mpl.colorbar.ColorbarBase(ax1_cbar,norm=MidpointNormalize(vmin=vmin,vmax=vmax,midpoint=midpoint),spacing='uniform',
         cmap=cmap,boundaries=bounds,ticks=bounds,orientation='horizontal')
 
-    #plt.savefig('diff.pdf')
-    plt.show()
+    plt.savefig(figs_path + 'fig1_obs.pdf')
 
 def heat_fraction():
 
     years = np.linspace(2012,2021,10)
     nyears = 10
     i = 0
-    mset = Dataset('mcci_jja_2012.nc')
+    mset = Dataset(obs_M_filename)
 
     m = mset['m'][:,:,:]
     mlon = mset['lon'][:]
     mlat = mset['lat'][:]
     mset.close()
 
-    Tset = Dataset('Tcpc_jja_2012-2021.nc')
+    Tset = Dataset(obs_T_filename)
     Tlon = Tset['lon'][:]
     Tlat = Tset['lat'][:]
     T = Tset['T'][:,:,:]

@@ -10,3 +10,4 @@ dependencies:
   - numpy=1.23.5
   - netCDF4
   - scikit-learn
+  - cartopy
